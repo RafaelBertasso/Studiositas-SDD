@@ -21,13 +21,13 @@ altere o percurso, este documento deve ser atualizado.
 
 ### Estado geral
 
-**Fase atual:** preparação do projeto e definição do primeiro incremento.
+**Fase atual:** implementação da autenticação básica.
 
 **Última etapa concluída:** estrutura inicial do projeto Flutter, constituição,
 roadmap e validações puras do cadastro.
 
-**Próxima etapa:** configurar a base do aplicativo e implementar o fluxo de
-autenticação com e-mail e senha, começando pela especificação 002.
+**Próxima etapa:** implementar o FirebaseAuthService, o AuthRepository e os
+estados da ViewModel da autenticação.
 
 **Branch de trabalho:** cada etapa deve criar uma nova branch a partir da
 `main`, conforme definido em [`constitution.md`](../constitution.md).
@@ -78,7 +78,7 @@ Referências:
 
 ### Fase 1 — Autenticação básica
 
-**Status:** Em preparação
+**Status:** Em desenvolvimento
 
 Objetivo: permitir que uma pessoa crie uma conta e acesse o aplicativo.
 
@@ -369,6 +369,7 @@ os contratos de negócio, permitindo comparar as duas implementações.
 | 2026-10-15 | Fundação do projeto | Concluída parcialmente | Projeto Flutter, SDD, Git e estrutura inicial criados. |
 | 2026-10-15 | Validação de cadastro | Em preparação | Regras puras e testes iniciais criados. |
 | 2026-10-15 | Roadmap | Concluída | Percurso completo documentado. |
+| 2026-10-15 | Contrato de autenticação | Em desenvolvimento | Entidades de sessão/perfil e contrato do AuthRepository criados. |
 
 ## Convenção de status
 
