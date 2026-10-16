@@ -145,7 +145,35 @@ Antes de especificar ou codificar uma funcionalidade, verificar:
 - [ ] os testes necessários foram identificados;
 - [ ] perguntas que bloqueiam a implementação foram respondidas.
 
-## 8. Hierarquia de referência
+## 8. Fluxo de branches
+
+1. Cada etapa de desenvolvimento deve começar em uma branch nova criada a
+   partir da `main` atualizada.
+2. A branch deve representar uma única etapa, funcionalidade ou alteração
+   coerente.
+3. O nome da branch deve indicar seu propósito, usando prefixos como
+   `feature/`, `fix/`, `docs/`, `test/` ou `chore/`.
+4. Commits devem ser pequenos, coerentes e descrever claramente a alteração
+   realizada.
+5. A branch deve ser enviada ao GitHub para preservar o histórico da etapa.
+6. A `main` deve permanecer como a versão estável e integrável do projeto.
+7. Uma etapa só deve ser integrada à `main` depois de suas validações e testes
+   definidos na especificação.
+8. Depois da integração, a próxima etapa deve criar uma nova branch a partir da
+   `main` atualizada.
+
+Exemplo de fluxo:
+
+```text
+main
+  ↓ criar branch
+feature/003-autenticacao
+  ↓ implementar e testar
+  ↓ commit e push
+main ← integrar etapa validada
+```
+
+## 9. Hierarquia de referência
 
 Em caso de dúvida, seguir esta ordem:
 
