@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "783069137450",
+    "project_id": "studiositas-sdd",
+    "storage_bucket": "studiositas-sdd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783069137450:android:651f33b16f2825d82c1153",
+        "android_client_info": {
+          "package_name": "com.studiositas.studiositas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP3rxH0y1TK7sxuln6TSZR50Git1sfddY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
