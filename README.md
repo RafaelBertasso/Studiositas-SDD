@@ -55,6 +55,14 @@ permanentes estão documentadas em [`constitution.md`](constitution.md).
 - [Decisões técnicas](docs/decisoes-tecnicas.md)
 - [Especificação do MVP](specs/001-mvp-grupos-e-checkins.md)
 - [Especificação de autenticação](specs/002-autenticacao-email-senha.md)
+- [Artefatos Spec Kit da autenticação](specs/002-autenticacao-email-senha/)
+
+## Fluxo Spec Kit
+
+As funcionalidades relevantes seguem o fluxo `spec.md → plan.md → tasks.md →
+implementação → validação`. A constituição e as decisões técnicas existentes
+continuam sendo referências do projeto; os artefatos por feature detalham como
+cada etapa será executada.
 
 ## Desenvolvimento
 

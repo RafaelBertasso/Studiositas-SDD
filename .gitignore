@@ -1,0 +1,46 @@
+# Flutter/Dart
+frontend/.dart_tool/
+frontend/build/
+frontend/.packages
+frontend/.pub-cache/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+frontend/.metadata
+
+# IDEs
+frontend/.idea/
+frontend/*.iml
+frontend/**/workspace.xml
+frontend/**/tasks.xml
+frontend/**/usage.statistics.xml
+
+# Generated platform files
+frontend/android/local.properties
+frontend/android/**/generated/
+frontend/ios/Flutter/ephemeral/
+frontend/ios/Flutter/Generated.xcconfig
+frontend/ios/Flutter/flutter_export_environment.sh
+frontend/ios/Runner/GeneratedPluginRegistrant.*
+frontend/macos/Flutter/ephemeral/
+frontend/linux/flutter/ephemeral/
+frontend/windows/flutter/ephemeral/
+
+# Local tooling and checks
+flutter-check.txt
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Firebase local emulator state and logs
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+
+# OS files
+.DS_Store
+Thumbs.db

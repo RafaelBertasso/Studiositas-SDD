@@ -1,7 +1,7 @@
 import '../entities/auth_session.dart';
-import '../entities/user_profile.dart';
 
 abstract interface class AuthRepository {
+  /// Coordena autenticação e associação do perfil do usuário.
   Future<AuthSession> register({
     required String name,
     required String email,
