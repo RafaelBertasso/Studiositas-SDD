@@ -53,6 +53,7 @@ permanentes estão documentadas em [`constitution.md`](constitution.md).
 - [Constituição do projeto](constitution.md)
 - [Visão original](docs/visao-original.md)
 - [Decisões técnicas](docs/decisoes-tecnicas.md)
+- [Diário de aprendizado](docs/diario-aprendizado.md)
 - [Especificação do MVP](specs/001-mvp-grupos-e-checkins.md)
 - [Especificação de autenticação](specs/002-autenticacao-email-senha.md)
 - [Artefatos Spec Kit da autenticação](specs/002-autenticacao-email-senha/)

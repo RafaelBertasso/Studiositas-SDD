@@ -131,12 +131,17 @@ Firebase
    diário de aprendizado quando esse artefato for criado.
 4. Ao usar o Codex, o contexto da tarefa deve indicar a especificação e as
    regras da constituição relacionadas ao trabalho.
+5. O diário de aprendizado deve ser consultado no início de cada etapa, e suas
+   recomendações aplicáveis devem ser seguidas durante o planejamento,
+   implementação, validação e revisão.
 
 ## 7. Checklist obrigatório para iniciar uma etapa
 
 Antes de especificar ou codificar uma funcionalidade, verificar:
 
 - [ ] `constitution.md` foi lido;
+- [ ] `docs/diario-aprendizado.md` foi lido e suas recomendações aplicáveis
+  foram consideradas;
 - [ ] existe uma spec para a funcionalidade;
 - [ ] o escopo está definido;
 - [ ] as regras de negócio estão definidas;
@@ -173,7 +178,34 @@ feature/003-autenticacao
 main ← integrar etapa validada
 ```
 
-## 9. Hierarquia de referência
+## 9. Padrão de mensagens de commit
+
+1. As mensagens de commit devem seguir o padrão Conventional Commits.
+2. O tipo e o escopo devem permanecer em formato convencional, por exemplo
+   `feat(auth)`, `fix(auth)`, `refactor(auth)`, `test(auth)` ou
+   `chore(repo)`.
+3. A descrição do commit deve ser escrita em português, de forma objetiva e no
+   presente do indicativo.
+4. O formato padrão deve ser:
+
+```text
+tipo(escopo): descrição em português
+```
+
+Exemplos:
+
+```text
+feat(auth): adiciona casos de uso de autenticação
+fix(auth): corrige restauração da sessão
+refactor(auth): reorganiza contratos de serviço
+test(auth): adiciona testes da view model
+chore(repo): atualiza regras do gitignore
+```
+
+5. Commits devem representar uma alteração coerente e não devem misturar
+   funcionalidades independentes.
+
+## 10. Hierarquia de referência
 
 Em caso de dúvida, seguir esta ordem:
 
