@@ -23,6 +23,8 @@ class RegistrationValidationResult {
 }
 
 class ValidateRegistration {
+  const ValidateRegistration();
+
   static final _emailPattern = RegExp(r'^[^\s@]+@[^\s@]+\.[^\s@]+$');
   static final _uppercasePattern = RegExp(r'[A-Z]');
   static final _lowercasePattern = RegExp(r'[a-z]');
