@@ -9,10 +9,7 @@ abstract interface class AuthRepository {
     String? phone,
   });
 
-  Future<AuthSession> signIn({
-    required String email,
-    required String password,
-  });
+  Future<AuthSession> signIn({required String email, required String password});
 
   Future<AuthSession?> restoreSession();
 

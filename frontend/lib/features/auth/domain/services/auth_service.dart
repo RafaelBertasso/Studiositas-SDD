@@ -7,10 +7,7 @@ abstract interface class AuthService {
     required String password,
   });
 
-  Future<AuthAccount> signIn({
-    required String email,
-    required String password,
-  });
+  Future<AuthAccount> signIn({required String email, required String password});
 
   Future<AuthAccount?> restoreSession();
 

@@ -5,7 +5,8 @@ import '../../domain/errors/auth_failure.dart';
 import '../../domain/services/auth_service.dart';
 
 class FirebaseAuthService implements AuthService {
-  FirebaseAuthService({FirebaseAuth? auth}) : _auth = auth ?? FirebaseAuth.instance;
+  FirebaseAuthService({FirebaseAuth? auth})
+    : _auth = auth ?? FirebaseAuth.instance;
 
   final FirebaseAuth _auth;
 

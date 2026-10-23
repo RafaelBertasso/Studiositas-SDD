@@ -54,10 +54,7 @@ void main() {
       validData(passwordConfirmation: 'SenhaDiferente1!'),
     );
 
-    expect(
-      result.errors['passwordConfirmation'],
-      'As senhas não coincidem.',
-    );
+    expect(result.errors['passwordConfirmation'], 'As senhas não coincidem.');
   });
 
   test('allows an empty phone because it is optional', () {

@@ -5,7 +5,7 @@ import '../../domain/repositories/user_profile_repository.dart';
 
 class FirebaseUserProfileRepository implements UserProfileRepository {
   FirebaseUserProfileRepository({FirebaseFirestore? firestore})
-      : _firestore = firestore ?? FirebaseFirestore.instance;
+    : _firestore = firestore ?? FirebaseFirestore.instance;
 
   final FirebaseFirestore _firestore;
 

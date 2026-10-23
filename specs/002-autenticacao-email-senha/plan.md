@@ -33,6 +33,33 @@ Adicionar dependências/configuração necessária, implementar o serviço Fireb
 
 Implementar registro, login, restauração e logout através de abstrações testáveis.
 
+#### Contratos da fase
+
+- Os casos de uso dependem de `AuthRepository`, nunca de Firebase.
+- A `AuthViewModel` depende dos casos de uso ou de uma abstração de aplicação, nunca de `FirebaseAuthService`.
+- Cada operação deve expor estados observáveis de carregamento, sucesso e erro.
+- Falhas `AuthFailure` devem chegar à apresentação já traduzidas para mensagens apropriadas.
+- Operações concorrentes devem ser protegidas contra submissões duplicadas enquanto houver uma operação em andamento.
+
+#### Estados previstos
+
+`AuthViewModel` deverá representar, no mínimo:
+
+- `initializing`: restauração da sessão em andamento;
+- `unauthenticated`: nenhuma sessão ativa;
+- `authenticated`: sessão válida disponível;
+- `submitting`: cadastro ou login em andamento;
+- `error`: operação falhou, mantendo a sessão anterior quando aplicável.
+
+#### Critérios específicos de conclusão
+
+- Cadastro chama o Repository somente após validação dos dados.
+- Login chama o Repository somente após validação de e-mail e senha.
+- Restauração distingue carregamento, sessão ausente e sessão válida.
+- Logout limpa o estado autenticado mesmo após a operação bem-sucedida.
+- Erros não expõem exceções ou tipos do Firebase à apresentação.
+- Testes cobrem sucesso, falha e transições de estado de cada operação.
+
 ### Fase 4 — Views e navegação
 
 Substituir a tela de exemplo por telas de autenticação e área protegida, conectadas à ViewModel.

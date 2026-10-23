@@ -8,8 +8,8 @@ class FirebaseAuthRepository implements AuthRepository {
   FirebaseAuthRepository({
     required AuthService authService,
     required UserProfileRepository profileRepository,
-  })  : _authService = authService,
-        _profileRepository = profileRepository;
+  }) : _authService = authService,
+       _profileRepository = profileRepository;
 
   final AuthService _authService;
   final UserProfileRepository _profileRepository;
@@ -62,13 +62,9 @@ class FirebaseAuthRepository implements AuthRepository {
   ) async {
     final profile = await _profileRepository.findById(id);
     return AuthSession(
-      user: profile ??
-          UserProfile(
-            id: id,
-            name: '',
-            email: email,
-            createdAt: createdAt,
-          ),
+      user:
+          profile ??
+          UserProfile(id: id, name: '', email: email, createdAt: createdAt),
     );
   }
 }
