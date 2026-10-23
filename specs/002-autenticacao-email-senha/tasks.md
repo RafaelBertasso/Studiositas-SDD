@@ -9,12 +9,12 @@
 
 ## Fase 2 — Integração Firebase
 
-- [ ] T005 Adicionar dependências FlutterFire necessárias ao `pubspec.yaml`.
-- [ ] T006 Implementar `FirebaseAuthService` em `features/auth/data/services/`.
-- [ ] T007 Implementar serviço/repositório de perfil no Firestore.
-- [ ] T008 Implementar `FirebaseAuthRepository` coordenando conta, sessão e perfil.
-- [ ] T009 Mapear erros do Firebase para erros da aplicação.
-- [ ] T010 Validar que senha e credenciais não são persistidas no perfil.
+- [x] T005 Adicionar dependências FlutterFire necessárias ao `pubspec.yaml`.
+- [x] T006 Implementar `FirebaseAuthService` em `features/auth/data/services/`.
+- [x] T007 Implementar serviço/repositório de perfil no Firestore.
+- [x] T008 Implementar `FirebaseAuthRepository` coordenando conta, sessão e perfil.
+- [x] T009 Mapear erros do Firebase para erros da aplicação.
+- [x] T010 Validar que senha e credenciais não são persistidas no perfil.
 
 ## Fase 3 — Casos de uso e ViewModel
 
